@@ -34,7 +34,7 @@ class CampfireNotifier < BuilderPlugin
   def build_finished(build)
     return if @only_fixed_and_broken_builds
     if build.successful?
-      notify_of_build_outcome(build, "PASSED") unless @only_failed_builds
+      #notify_of_build_outcome(build, "PASSED") unless @only_failed_builds
     else
       notify_of_build_outcome(build, "FAILED!")
     end

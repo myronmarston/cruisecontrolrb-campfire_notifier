@@ -1,6 +1,6 @@
 require 'broach'
 
-class CampfireNotifier < BuilderPlugin
+class CampfireNotifier < defined?(BuilderPlugin) ? BuilderPlugin : Object
   attr_accessor :account, :token, :room, :trac_url, :broken_image, :fixed_image
   attr_accessor :ssl, :only_failed_builds, :only_fixed_and_broken_builds
 

@@ -41,7 +41,7 @@ class CampfireNotifier < defined?(BuilderPlugin) ? BuilderPlugin : Object
   end
 
   def build_broken(broken_build, previous_build)
-    notify_of_build_outcome(broken_build, "BROKE!")
+    # notify_of_build_outcome(broken_build, "BROKE!")
   end
 
   def build_fixed(fixed_build, previous_build)
